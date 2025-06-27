@@ -10,6 +10,8 @@ int main() {
 
     char upperTest[] = "lowerCASE text";
     char lowerTest[] = "UPPERcase TEXT";
+    char palindrome[] = "civic";
+    char substringExample[] = "abcdabcd";
 
     cout << "Word count tests:" << endl;
     cout << "Text:  " << str1 << " : " << wordCount(str1) << " words" << endl;
@@ -36,5 +38,20 @@ int main() {
 
     cout << "Text: " << str1 << " : ";
     vowelConsonantCount(str1);
+
+    cout << "String reversal:" << endl;
+    cout << "Before: " << str1 << endl;
+    cout << "After: " << reverseString(str1) << endl;
+    cout << "Before: " << palindrome << endl;
+    cout << "After: " << reverseString(palindrome) << endl << endl;
+
+    cout << "Palindrome check:" << endl;
+    cout << "Text: " << palindrome << " : " << isPalindrome(palindrome) << endl;
+    cout << "Text: " << str1 << " : " << isPalindrome(str1) << endl << endl;
+
+    cout << "Substring test:" << endl;
+    cout << "Text: " << substringExample << endl;
+    char substr[] = "abcd";
+    cout << substringCount(substringExample, substr) << " occurences";
     return 0;
 }
