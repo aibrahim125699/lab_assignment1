@@ -20,13 +20,9 @@ int wordCount(const char* str) {
 
 int charCount(const char* str) {
     if (!str) return 0;
-    int i = 0;
     int count = 0;
-    while (str[i] != '\0') {
-	if (str[i] != ' ') {
-        	count++;
-	}
-	i++;
+    while (str[count] != '\0') {
+        count++;
     }
     return count;
 }
