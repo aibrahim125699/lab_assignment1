@@ -32,7 +32,9 @@ int main() {
     cout << "Lowercase conversion:" << endl;
     cout << "Before: " << lowerTest << endl;
     toLowerCase(lowerTest);
-    cout << "After:  " << lowerTest << endl;
+    cout << "After:  " << lowerTest << endl << endl;
 
+    cout << "Text: " << str1 << " : ";
+    vowelConsonantCount(str1);
     return 0;
 }

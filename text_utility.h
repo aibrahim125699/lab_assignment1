@@ -3,7 +3,7 @@
 
 int wordCount(const char* str);
 int charCount(const char* str);
-void vowelConsonantCount(const char* str, int& vowels, int& consonants);
+void vowelConsonantCount(const char* str);
 void reverseString(char* str);
 bool isPalindrome(const char* str);
 void toUpperCase(char* str);
